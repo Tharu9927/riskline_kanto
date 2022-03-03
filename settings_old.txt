@@ -1,0 +1,65 @@
+# ログイン情報
+[login]
+id_1 = rl_85006            ###kkr_3871
+pass_1 = cbr_Suigai0       ###123
+id_2 = 
+pass_2 = 
+# プロキシ情報
+[preference]
+type = 1
+http = proxy.tokyo.ctie.co.jp
+http_port = 3128
+
+# 地方情報
+[region]
+region_1 = kanto
+region_2 = 
+
+region_1_name = 関東
+region_2_name = 
+
+# （未受信） 一覧ファイル・結果ファイル
+[receive]
+receive_1_list = receive_list_kanto.csv
+receive_2_list = 
+result = result_receive
+
+# （危険度） 一覧ファイル・結果ファイル
+[kiken]
+kiken_1_list = kiken_list_kanto.csv
+kiken_2_list = 
+result = result_kiken
+
+# メール情報
+[mail]
+smtp = smtp.tokyo.ctie.co.jp
+from = 水害リスクライン自動チェック
+address = kozuiyosoku@ctie.co.jp
+region_1_to = miura@ctie.co.jp,kzh-asai@ctie.co.jp
+region_1_cc = 
+region_2_to = 
+region_2_cc = 
+# 未受信チェックメール
+message_receive1 = ※送信専用アドレスにつき返信不可です。
+message_receive2 = 
+# 危険度チェックメール
+message_kiken1 = ※送信専用アドレスにつき返信不可です。
+message_kiken2 = 
+
+# メイン情報
+[main]
+path = \\202.251.24.59\水害リスクライン自動チェック
+url_top = https://frlg.river.go.jp
+url_suikei = https://frlg.river.go.jp/TopViewMain
+
+# ログ情報
+[log_setting_area]
+dir = logs
+file_result_receive1 = result_receive_kinki.log
+file_result_receive2 = result_receive.log
+file_result_kiken1 = result_kiken_kinki.log
+file_result_kiken2 = result_kiken.log
+level = 20
+level_file = 20
+max_byte = 5242880
+backup_count = 50
